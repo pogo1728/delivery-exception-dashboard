@@ -1,0 +1,308 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+h1{
+  color: white;
+}
+body{
+  background: #e6e6e6;
+  color:  #000000;
+}
+
+.container{
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.app-header{
+  background: #181717;
+  border-bottom: 1px solid #000000;
+  padding: 18px 20px;
+}
+
+.app-header h1{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.subtext{
+  color: #f5f2f2;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.card{
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.section-title{
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.form-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-group label{
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #000000;
+}
+
+.req{
+  color: #ff3030;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid #77797d;
+  outline: none;
+  transition: 0.2s;
+  background: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  border-color:  #e2641a;
+}
+
+.full-width{
+  grid-column: 1 / -1;
+}
+
+.radio-row{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.radio-pill{
+  border: 1px solid #05070b;
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.radio-pill.high{
+  border-color: #fd7474;
+  background: #ffffff;
+}
+
+.form-actions{
+  display: flex;
+  gap: 10px;
+}
+
+.error{
+  display: block;
+  font-size: 12px;
+  margin-top: 6px;
+  color: #ededed;
+  min-height: 16px;
+}
+
+
+.btn{
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.btn.primary{
+  background:  #2557c2;
+  color: #fff;
+}
+
+.btn.primary:hover{
+  background:  #112567;
+}
+
+.btn.ghost{
+  background: transparent;
+  border: 1px solid #e5e7eb;
+}
+
+.btn.ghost:hover{
+  background: #f3f4f6;
+}
+
+.btn.danger{
+  background: #d82525;
+  color: white;
+}
+
+.btn.danger:hover{
+  filter: brightness(0.92);
+}
+
+.btn.success{
+  background: #16a34a;
+  color: white;
+}
+
+.btn.success:hover{
+  filter: brightness(0.92);
+}
+
+.btn:disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+.dashboard-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.stats{
+  display: flex;
+  gap: 10px;
+}
+
+.stat-box{
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 10px 12px;
+  min-width: 120px;
+}
+
+.stat-box.resolved{
+  border-color: #86efac;
+  background: #ecfdf5;
+}
+
+.stat-label{
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.stat-value{
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 4px;
+}
+
+.filters{
+  display: flex;
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.filter-group{
+  flex: 1;
+}
+
+.filter-group label{
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #6b7280;
+}
+
+.filter-group select{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.table-wrap{
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.exceptions-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.exceptions-table th,
+.exceptions-table td{
+  padding: 12px 10px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 13px;
+  text-align: left;
+}
+
+.exceptions-table th{
+  background: #f9fafb;
+  font-weight: 700;
+  color: #374151;
+}
+
+.badge{
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 999px;
+  display: inline-block;
+  border: 1px solid #e5e7eb;
+}
+
+.badge.open{
+  background: #eef2ff;
+  border-color: #c7d2fe;
+  color: #3730a3;
+}
+
+.badge.resolved{
+  background: #ecfdf5;
+  border-color: #86efac;
+  color: #065f46;
+}
+
+.priority-high{
+  background: #fff7ed;
+  border: 1px solid #f8745a;
+}
+
+.row-resolved{
+  background: #ecfdf5;
+  opacity: 0.95;
+}
+
+.actions{
+  display: flex;
+  gap: 8px;
+}
+
+.empty-state{
+  padding: 14px;
+  text-align: center;
+  color: #6b7280;
+  display: none;
+}
